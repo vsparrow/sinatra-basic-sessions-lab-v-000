@@ -1,0 +1,15 @@
+<!-- # In the view rendered by the controller action, display the item the user entered to purchase. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%= @params %>
+    <%= @session %>
+    <h2>Purchase</h2>
+    <h3>Item:<%= @session["item"]%></h3>
+    <h3>Item displayed via key:<%= @session[:item]%></h3>
+  </body>
+</html>
